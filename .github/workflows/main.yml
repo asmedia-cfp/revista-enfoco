@@ -19,9 +19,10 @@ jobs:
         exclude: |
           **/.git* 
           **/.git*/**
-          .DS_Store
           .git/
           .github/
           .vscode/
+          .DS_Store
           .gitignore
           README.md
+          .vscode/settings.json
