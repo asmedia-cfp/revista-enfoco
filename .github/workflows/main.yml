@@ -17,6 +17,8 @@ jobs:
         local-dir: ./
         server-dir: /httpdocs/revista-enfoco/
         exclude: |
+          **/.git* 
+          **/.git*/**
           .DS_Store
           .git/
           .github/
