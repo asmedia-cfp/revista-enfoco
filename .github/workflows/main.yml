@@ -19,10 +19,11 @@ jobs:
         exclude: |
           **/.git/**
           **/node_modules/**
-          .vscode
           .ftpignore
           .ftp-deploy-sync-state.json
           README.md
           .DS_Store
-          .github
-          .git
+          .git/
+          .github/
+          .vscode/
+          .gitignore
