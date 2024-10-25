@@ -555,3 +555,128 @@ a:hover {
 	
 	background-color: var(--black);
 }
+
+/* Test */
+
+.test {
+  background-image: url(../assets/test/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+.test-title {
+  margin-bottom: 1rem;
+}
+
+.form,
+.resultado {
+  background-color: rgba(0, 0, 0, 0.713);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.pregunta,
+.resultado > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .pregunta,
+  .resultado > div {
+    flex-direction: column;
+  }
+}
+
+
+
+
+.pregunta-imagen img, 
+.resultado-imagen img{
+  max-width: 400px;
+  width: 360px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.pregunta-inputs,
+.resultado-content {
+  padding: 24px;
+}
+
+.pregunta-inputs h3 {
+  font-size: 24px;
+  line-height: 32px;
+  hyphens:none;
+}
+
+.pregunta-inputs label {
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 24px;
+  hyphens:none;
+}
+
+.pregunta-inputs input {
+  margin-bottom: 1rem;
+
+}
+
+.pregunta-inputs input[type="radio"] {
+  appearance: none; /* Oculta el estilo predeterminado */
+  width: 20px;
+  height: 20px;
+  display: inline;
+  border: 4px solid var(--magent);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  top: 20px  
+}
+
+input[type="radio"]:checked {
+  background-color: var(--yellow);
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+}
+
+
+.buttons button:disabled{
+  background-color: rgba(128, 128, 128, 0.166);
+  cursor: auto;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  text-wrap: nowrap;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  border-radius: 4rem;
+  background-color: var(--cyan);
+  cursor: pointer;
+}
+
+.buttons button:enabled:hover {
+  color: var(--black);
+  background-color: var(--bgc-button-cta-hover);
+  box-shadow: 0 0 40px 0 var(--glow-cyan);
+}
+
+
+.resultado-content h3 {
+  font-size: 32px;
+  line-height: 44px;
+  hyphens:none;
+}
