@@ -17,13 +17,9 @@ jobs:
         local-dir: ./
         server-dir: /httpdocs/revista-enfoco/
         exclude: |
-          **/.git/**
-          **/node_modules/**
-          .ftpignore
-          .ftp-deploy-sync-state.json
-          README.md
           .DS_Store
           .git/
           .github/
           .vscode/
           .gitignore
+          README.md
