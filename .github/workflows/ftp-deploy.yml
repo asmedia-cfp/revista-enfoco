@@ -14,11 +14,12 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Upload files to FTP server
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./  # Carpeta local a subir
-        server-dir: /httpdocs/revista-enfoco  # Directorio en el servidor de destino
-        method: ftp
+        server: ${{ secrets.FTP_SERVER }}     
+        username: ${{ secrets.FTP_USERNAME }}  
+        password: ${{ secrets.FTP_PASSWORD }}  
+        local-dir: ./                        
+        server-dir: /httpdocs/revista-enfoco   
+        method: ftp                           
+
