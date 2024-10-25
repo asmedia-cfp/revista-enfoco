@@ -1,25 +1,16 @@
-name: Deploy to FTP
-
-on:
-  push:
-    branches:
-      - main  # O la rama que prefieras
-
+on: push
+name: 🚀 Deploy website on push
 jobs:
-  ftp-deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Upload files to FTP server
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ secrets.FTP_SERVER }}     
-        username: ${{ secrets.FTP_USERNAME }}  
-        password: ${{ secrets.FTP_PASSWORD }}  
-        local-dir: ./                        
-        server-dir: /httpdocs/revista-enfoco   
-        method: ftp                           
-
+        server: 66.40.26.22
+        username: asmediaftp
+        password: ${{ secrets.ftp_password }}
