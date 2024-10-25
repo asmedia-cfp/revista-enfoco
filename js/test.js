@@ -112,6 +112,7 @@ function calcularResultado() {
     // Ocultar formulario y mostrar el botón de "Reiniciar" junto al resultado
     form.style.display = 'none';
     document.getElementById('btnReiniciar').style.display = 'block';
+    document.getElementById('resultado-container').style.display = 'block';
 }
 function reiniciarTest() {
     // Reiniciar el formulario y las preguntas
@@ -131,5 +132,6 @@ function reiniciarTest() {
     document.getElementById('btnSiguiente').disabled = true;  // Deshabilitado hasta seleccionar una respuesta
     document.getElementById('btnFinalizar').style.display = 'none';  // Asegurar que 'Finalizar' esté oculto
     document.getElementById('btnFinalizar').disabled = true;  // Asegurar que 'Finalizar' esté deshabilitado
+    document.getElementById('resultado-container').style.display = 'none';
 }
 
