@@ -1,136 +1,227 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revista Enfoco</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Revista Enfoco</title>
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
-	<!-- Swiper -->
-	<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/resset.css?01" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="./css/resset.css?01" />
-	<link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <nav class="fullwidth">
+      <div class="nav">
+        <div class="nav-brand">
+          <a href="#"
+            ><img
+              class="nav-img"
+              src="./assets/brand/symbol.svg"
+              alt="Símbolo Revista Enfoco"
+            />
+          </a>
+        </div>
+        <div class="nav-container">
+          <div class="nav-container-item menu">
+            <ul class="nav-menu">
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="#about">
+                  <img
+                    class="nav-menu-icon"
+                    src="./assets/icons/about.svg"
+                    alt="Icono Acerca de"
+                  />Acerca de
+                </a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="#team">
+                  <img
+                    class="nav-menu-icon"
+                    src="./assets/icons/team.svg"
+                    alt="Icono Directorio"
+                  />Equipo</a
+                >
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="#contact">
+                  <img
+                    class="nav-menu-icon"
+                    src="./assets/icons/contact.svg"
+                    alt="Icono Contacto"
+                  />Contacto</a
+                >
+              </li>
+            </ul>
+            <div class="nav-social">
+              <a
+                class="nav-social-item"
+                href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d"
+                target="_blank"
+              >
+                <svg
+                  class="nav-social-icon"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  alt="Icono Facebook"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="nav-social-item"
+                href="https://www.instagram.com/revista.enfoco/"
+                target="_blank"
+              >
+                <svg
+                  class="nav-social-icon"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="nav-social-item"
+                href="https://www.tiktok.com/@revista.enfoco"
+                target="_blank"
+              >
+                <svg
+                  class="nav-social-icon"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="nav-container-item">
+            <a
+              class="button-cta"
+              href="https://issuu.com/asmedia-cfp/docs/enfoco_no3_compreso"
+              target="_blank"
+            >
+              Ver Revista
+              <svg
+                class="button-cta-img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_874_9"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                >
+                  <rect width="24" height="24" />
+                </mask>
+                <g mask="url(#mask0_874_9)">
+                  <path
+                    d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <button class="button-menu">
+              <svg
+                class="button-menu-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<body>
-	<nav class="fullwidth">
-		<div class="nav">
-			<div class="nav-brand">
-				<a href="#"><img class="nav-img" src="./assets/brand/symbol.svg" alt="Símbolo Revista Enfoco" />
-				</a>
-			</div>
-			<div class="nav-container">
-				<div class="nav-container-item menu">
-					<ul class="nav-menu">
-						<li class="nav-menu-item">
-							<a class="nav-menu-link" href="#about">
-								<img class="nav-menu-icon" src="./assets/icons/about.svg" alt="Icono Acerca de" />Acerca de
-							</a>
-						</li>
-						<li class="nav-menu-item">
-							<a class="nav-menu-link" href="#team">
-								<img class="nav-menu-icon" src="./assets/icons/team.svg" alt="Icono Directorio" />Equipo</a>
-						</li>
-						<li class="nav-menu-item">
-							<a class="nav-menu-link" href="#contact">
-								<img class="nav-menu-icon" src="./assets/icons/contact.svg" alt="Icono Contacto" />Contacto</a>
-						</li>
-					</ul>
-					<div class="nav-social">
-						<a class="nav-social-item"
-							href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d" target="_blank">
-							<svg class="nav-social-icon" viewBox="0 0 32 32" fill="none" alt="Icono Facebook"
-								xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z" />
-							</svg>
-						</a>
-						<a class="nav-social-item" href="https://www.instagram.com/revista.enfoco/" target="_blank">
-							<svg class="nav-social-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z" />
-							</svg>
-						</a>
-						<a class="nav-social-item" href="https://www.tiktok.com/@revista.enfoco" target="_blank">
-							<svg class="nav-social-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z" />
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="nav-container-item">
-					<a class="button-cta" href="https://issuu.com/asmedia-cfp/docs/revista_enfoco_no1_digital_3" target="_blank">
-						Ver Revista
-						<svg class="button-cta-img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-							<mask id="mask0_874_9" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0">
-								<rect width="24" height="24" />
-							</mask>
-							<g mask="url(#mask0_874_9)">
-								<path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" />
-							</g>
-						</svg>
-					</a>
-					<button class="button-menu">
-						<svg class="button-menu-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-							<path fill-rule="evenodd"
-								d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>
-	</nav>
+    <header class="header">
+      <div class="wrapper">
+        <section class="hero">
+          <div class="col-50">
+            <div class="hero-content">
+              <h1 class="hero-title">Revista Enfoco</h1>
+              <p class="hero-text">
+                Descubre artículos fascinantes y contenido que despierta tu
+                mente. ¡Bienvenido a un mundo de lecturas que inspiran!
+              </p>
+              <a
+                class="button-cta"
+                href="https://issuu.com/asmedia-cfp/docs/enfoco_no3_compreso"
+                target="_blank"
+              >
+                Ver Revista
+                <svg
+                  class="button-cta-img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_874_9"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                  >
+                    <rect width="24" height="24" />
+                  </mask>
+                  <g mask="url(#mask0_874_9)">
+                    <path
+                      d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="hero-media">
+              <img
+                class="hero-img"
+                src="./assets/images/cover-min.gif"
+                alt="Celular con portada de la Revista Enfoco"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
 
-	<header class="header">
-		<div class="wrapper">
-			<section class="hero">
-				<div class="col-50">
-					<div class="hero-content">
-						<h1 class="hero-title">Revista Enfoco</h1>
-						<p class="hero-text">
-							Descubre artículos fascinantes y contenido que despierta tu
-							mente. ¡Bienvenido a un mundo de lecturas que inspiran!
-						</p>
-						<a class="button-cta" href="https://issuu.com/asmedia-cfp/docs/revista_enfoco_no1_digital_3"
-							target="_blank">
-							Ver Revista
-							<svg class="button-cta-img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<mask id="mask0_874_9" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0">
-									<rect width="24" height="24" />
-								</mask>
-								<g mask="url(#mask0_874_9)">
-									<path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" />
-								</g>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="col-50">
-					<div class="hero-media">
-						<img class="hero-img" src="./assets/images/cover-min.gif" alt="Celular con portada de la Revista Enfoco" />
-					</div>
-				</div>
-			</section>
-		</div>
-	</header>
-
-
-	<main class="main">
-
-
-		<!--       <div class="wrapper">
+    <main class="main">
+      <div class="wrapper">
         <h2 class="magazine-title">Revista</h2>
-      </div> -->
-		<!--       <div class="fullwidth">
+      </div>
+      <div class="fullwidth">
         <section class="magazine" id="magazine">
           <div
             style="
@@ -154,215 +245,268 @@
                 top: 0;
                 bottom: 0;
               "
-              src="https://e.issuu.com/embed.html?backgroundColor=transparent&d=revista_enfoco_no1_digital_3&u=asmedia-cfp"
+              src="https://e.issuu.com/embed.html?backgroundColor=transparent&d=enfoco_no3_compreso&u=asmedia-cfp"
             ></iframe>
           </div>
         </section>
-      </div> -->
+      </div>
 
-		<div class="wrapper">
-			
+      <div class="wrapper">
+        <section class="about" id="about">
+          <div class="about-item">
+            <img
+              class="about-img"
+              src="./assets/images/about.png"
+              alt="Persona leyendo la Revista Enfoco"
+            />
+          </div>
 
-			<section class="about" id="about">
-				<div class="about-item">
-					<img class="about-img" src="./assets/images/about.png" alt="Persona leyendo la Revista Enfoco" />
-				</div>
+          <div class="about-item">
+            <h2 class="about-title">De qué va?</h2>
+            <p class="about-text">
+              Una revista donde convergen el arte digital, la innovación
+              tecnológica y la moda. Exploramos las últimas tendencias del
+              diseño multimedia, la consultoría de imagen y la producción
+              audiovisual.
+            </p>
+          </div>
+        </section>
+      </div>
 
-				<div class="about-item">
-					<h2 class="about-title">De qué va?</h2>
-					<p class="about-text">
-						Una revista donde convergen el arte digital, la innovación
-						tecnológica y la moda. Exploramos las últimas tendencias del
-						diseño multimedia, la consultoría de imagen y la producción
-						audiovisual.
-					</p>
-				</div>
-			</section>
-		</div>
+      <div class="fullwidth">
+        <section class="team" id="team">
+          <div class="wrapper">
+            <h2 class="team-title">Team</h2>
+          </div>
+          <div class="slide-container swiper">
+            <div class="slider-wrapper swiper-wrapper">
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Roxan</h4>
+                  <p class="slide-rol">Dirección de Arte</p>
+                </div>
+                <img class="slide-img" src="./assets/team/roxan.jpg" alt="" />
+              </div>
 
-		<div class="fullwidth">
-			<section class="team" id="team">
-				<div class="wrapper">
-					<h2 class="team-title">Team</h2>
-				</div>
-				<div class="slide-container swiper">
-					<div class="slider-wrapper swiper-wrapper">
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Uriel</h4>
+                  <p class="slide-rol">Diseño Editorial</p>
+                </div>
+                <img class="slide-img" src="./assets/team/uriel.jpg" alt="" />
+              </div>
 
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Montse</h4>
+                  <p class="slide-rol">Web</p>
+                </div>
+                <img class="slide-img" src="./assets/team/montse.png" alt="" />
+              </div>
 
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Sam</h4>
+                  <p class="slide-rol">Diseño Editorial</p>
+                </div>
+                <img class="slide-img" src="./assets/team/sam.png" alt="" />
+              </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Roxan</h4>
-								<p class="slide-rol">Dirección de Arte</p>
-							</div>
-							<img class="slide-img" src="./assets/team/roxan.jpg" alt="" />
-						</div>
-						
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Uriel</h4>
-								<p class="slide-rol">Diseño Editorial</p>
-							</div>
-							<img class="slide-img" src="./assets/team/uriel.jpg" alt="" />
-						</div>
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Lili</h4>
+                  <p class="slide-rol">Diseño Editorial</p>
+                </div>
+                <img class="slide-img" src="./assets/team/lili.png" alt="" />
+              </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Montse</h4>
-								<p class="slide-rol">Web</p>
-							</div>
-							<img class="slide-img" src="./assets/team/montse.png" alt="" />
-						</div>
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Luis</h4>
+                  <p class="slide-rol">Dirección de Arte</p>
+                </div>
+                <img class="slide-img" src="./assets/team/luis.png" alt="" />
+              </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Sam</h4>
-								<p class="slide-rol">Diseño Editorial</p>
-							</div>
-							<img class="slide-img" src="./assets/team/sam.png" alt="" />
-						</div>
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Karen</h4>
+                  <p class="slide-rol">Contenidos</p>
+                </div>
+                <img class="slide-img" src="./assets/team/karen.jpg" alt="" />
+              </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Lili</h4>
-								<p class="slide-rol">Diseño Editorial</p>
-							</div>
-							<img class="slide-img" src="./assets/team/lili.png" alt="" />
-						</div>
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Colette</h4>
+                  <p class="slide-rol">Dirección de Arte</p>
+                </div>
+                <img class="slide-img" src="./assets/team/colette.png" alt="" />
+              </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Luis</h4>
-								<p class="slide-rol">Dirección de Arte</p>
-							</div>
-							<img class="slide-img" src="./assets/team/luis.png" alt="" />
-						</div>
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Diego</h4>
+                  <p class="slide-rol">Redes Sociales</p>
+                </div>
+                <img class="slide-img" src="./assets/team/diego.png" alt="" />
+              </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Karen</h4>
-								<p class="slide-rol">Contenidos</p>
-							</div>
-							<img class="slide-img" src="./assets/team/karen.jpg" alt="" />
-						</div>
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Yukio</h4>
+                  <p class="slide-rol">Dirección de Arte</p>
+                </div>
+                <img class="slide-img" src="./assets/team/yukio.png" alt="" />
+              </div>
 
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Jorge</h4>
+                  <p class="slide-rol">Redes Sociales</p>
+                </div>
+                <img class="slide-img" src="./assets/team/jorge.png" alt="" />
+              </div>
 
+              <div class="slider-card swiper-slide">
+                <div class="slide-overlay">
+                  <h4 class="slide-name">Enrique</h4>
+                  <p class="slide-rol">Redes Sociales</p>
+                </div>
+                <img class="slide-img" src="./assets/team/enrique.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+      </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Colette</h4>
-								<p class="slide-rol">Dirección de Arte</p>
-							</div>
-							<img class="slide-img" src="./assets/team/colette.png" alt="" />
-						</div>
+      <div class="wrapper">
+        <section class="contact" id="contact">
+          <h2 class="contact-title">TocToc!</h2>
+          <p class="contact-text">
+            Tu opinión es muy importante para nosotros. Escríbenos un mensajito
+            por Whatsapp y cuéntanos que te ha parecido la revista.
+          </p>
+          <a
+            class="contact-button button-secondary"
+            href="https://wa.me/5212229142826"
+            >Whatsapp</a
+          >
+        </section>
+      </div>
+    </main>
 
+    <footer class="fullwidth">
+      <div class="footer">
+        <div class="footer-brand">
+          <img
+            class="footer-img"
+            src="./assets/icons/logotipo-ENFOCO.svg"
+            alt="Logotipo ENFOCO"
+          />
+        </div>
+        <div class="footer-menus">
+          <div class="footer-menu-1">
+            <a class="footer-menu-link" href="#">
+              <img
+                class="footer-menu-icon"
+                src="./assets/icons/house-icon.svg"
+                alt="Icono Inicio"
+              />
+              Inicio</a
+            >
+            <a class="footer-menu-link" href="#about">
+              <img
+                class="footer-menu-icon"
+                src="./assets/icons/about.svg"
+                alt="Icono Inicio"
+              />
+              Acerca de</a
+            >
+          </div>
+          <div class="footer-menu-2">
+            <a class="footer-menu-link" href="#team">
+              <img
+                class="footer-menu-icon"
+                src="./assets/icons/team.svg"
+                alt="Icono Team"
+              />
+              Team</a
+            >
+            <a class="footer-menu-link" href="#contact">
+              <img
+                class="footer-menu-icon"
+                src="./assets/icons/contact.svg"
+                alt="Icono Contacto"
+              />
+              Contacto</a
+            >
+          </div>
+        </div>
 
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Diego</h4>
-								<p class="slide-rol">Redes Sociales</p>
-							</div>
-							<img class="slide-img" src="./assets/team/diego.png" alt="" />
-						</div>
+        <div class="footer-social">
+          <a
+            class="footer-social-item"
+            href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d"
+            target="_blank"
+          >
+            <svg
+              class="footer-social-icon"
+              viewBox="0 0 32 32"
+              fill="none"
+              alt="Icono Facebook"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="footer-social-item"
+            href="https://www.instagram.com/revista.enfoco/"
+            target="_blank"
+          >
+            <svg
+              class="footer-social-icon"
+              alt="Icono Instagram"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="footer-social-item"
+            href="https://www.tiktok.com/@revista.enfoco"
+            target="_blank"
+          >
+            <svg
+              class="footer-social-icon"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
 
-
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Yukio</h4>
-								<p class="slide-rol">Dirección de Arte</p>
-							</div>
-							<img class="slide-img" src="./assets/team/yukio.png" alt="" />
-						</div>
-
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Jorge</h4>
-								<p class="slide-rol">Redes Sociales</p>
-							</div>
-							<img class="slide-img" src="./assets/team/jorge.png" alt="" />
-						</div>
-
-						<div class="slider-card swiper-slide">
-							<div class="slide-overlay">
-								<h4 class="slide-name">Enrique</h4>
-								<p class="slide-rol">Redes Sociales</p>
-							</div>
-							<img class="slide-img" src="./assets/team/enrique.jpg" alt="" />
-						</div>
-						
-					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-pagination"></div>
-				</div>
-			</section>
-		</div>
-
-		<div class="wrapper">
-			<section class="contact" id="contact">
-				<h2 class="contact-title">TocToc!</h2>
-				<p class="contact-text">
-					Tu opinión es muy importante para nosotros. Escríbenos un mensajito
-					por Whatsapp y cuéntanos que te ha parecido la revista.
-				</p>
-				<a class="contact-button button-secondary" href="https://wa.me/5212229142826">Whatsapp</a>
-			</section>
-		</div>
-	</main>
-
-	<footer class="fullwidth">
-		<div class="footer">
-			<div class="footer-brand">
-				<img class="footer-img" src="./assets/icons/logotipo-ENFOCO.svg" alt="Logotipo ENFOCO" />
-			</div>
-			<div class="footer-menus">
-				<div class="footer-menu-1">
-					<a class="footer-menu-link" href="#">
-						<img class="footer-menu-icon" src="./assets/icons/house-icon.svg" alt="Icono Inicio" />
-						Inicio</a>
-					<a class="footer-menu-link" href="#about">
-						<img class="footer-menu-icon" src="./assets/icons/about.svg" alt="Icono Inicio" />
-						Acerca de</a>
-				</div>
-				<div class="footer-menu-2">
-					<a class="footer-menu-link" href="#team">
-						<img class="footer-menu-icon" src="./assets/icons/team.svg" alt="Icono Team" />
-						Team</a>
-					<a class="footer-menu-link" href="#contact">
-						<img class="footer-menu-icon" src="./assets/icons/contact.svg" alt="Icono Contacto" />
-						Contacto</a>
-				</div>
-			</div>
-
-			<div class="footer-social">
-				<a class="footer-social-item"
-					href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d" target="_blank">
-					<svg class="footer-social-icon" viewBox="0 0 32 32" fill="none" alt="Icono Facebook"
-						xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z" />
-					</svg>
-				</a>
-				<a class="footer-social-item" href="https://www.instagram.com/revista.enfoco/" target="_blank">
-					<svg class="footer-social-icon" alt="Icono Instagram" viewBox="0 0 32 32" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z" />
-					</svg>
-				</a>
-				<a class="footer-social-item" href="https://www.tiktok.com/@revista.enfoco" target="_blank">
-					<svg class="footer-social-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z" />
-					</svg>
-				</a>
-			</div>
-		</div>
-	</footer>
-
-	<script src="./js/swiper-bundle.min.js"></script>
-	<script src="./js/app.js"></script>
-
-</body>
-
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
