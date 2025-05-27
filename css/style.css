@@ -337,6 +337,16 @@ a:hover {
   transition: all 0.3s;
 }
 
+.magazine-iframe {
+  width: 100%;
+  height: 800px;
+}
+
+@media screen and (max-width: 424px) {
+  .magazine-iframe {
+    height: 400px;
+  }
+}
 /* About Section */
 
 .about {
